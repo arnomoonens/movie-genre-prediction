@@ -92,7 +92,7 @@ def main():
     # test_predictions = predict(mlb, pipe, test_df)
 
     score = get_score(val_predictions, val_df, args.k)
-    print(f"MAPK score on validation data: {score}")
+    print(f"MAPK score on validation data: {score:.3%}")
 
 
 if __name__ == "__main__":
